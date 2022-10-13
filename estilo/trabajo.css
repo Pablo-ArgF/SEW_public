@@ -1,0 +1,92 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Descipción de los estilos que contiene
+        contiene estilos para los elementos de la pagina de ruby
+******************/
+
+/*Aplicamos a body el estilo*/
+body /*especifidad =  1*/
+{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, footer /*especifidad =  2*/
+{
+    color: white;
+    background-color: #bc0013;
+
+    
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+h2 /*especifidad =  1*/
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #e2939b;
+
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+
+p /*especificidad = 1*/
+{
+    padding: 0.3em;
+}
+
+nav /*especifidad =  1*/
+{
+    color: black;
+    background-color: rgb(255, 184, 184);
+    
+    
+    border-radius: 0.2em;
+    padding: 0.5em;
+    text-align: center; 
+}
+
+section /*especifidad =  1*/
+{
+    color: black;
+    background-color: rgb(209, 209, 209);
+    
+    border-radius: 0.2em;
+}
+
+ul li/*especificidad = 2*/
+{
+    color: rgb(233, 49, 49);
+}
+
+/*ultimo elemento de las listas anidadas en color verde*/
+ul ul li:last-child /*especificidad = 13 //TODO preguntar si b=1 dado que es subclase */
+{
+    color: green;
+}
+
+table /*especificidad = 1*/
+{
+    background-color: #e2939b;
+}
+
+table caption /*especificidad = 2*/
+{
+    font-size: 1.2em;
+    background-color: #b82578;
+
+}
+
+table th/*especificidad = 2*/
+{
+    background-color: #aa3c47;
+}
+
+/*Hace que los titulos dentro del formulario de las secciones salgan en rojo*/
+form fieldset legend /*especidad = 3*/
+{
+    color: red;
+}
+
