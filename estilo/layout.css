@@ -1,0 +1,52 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    //TODO Descipción de los layouts que contiene
+******************/
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 1em 3em;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "h1 h1"
+      "nav nav"
+      "header header"
+      "section1 section2"
+      "footer footer";
+
+
+    /*Configuramos la posicion de los elementos dentro de 
+    su grid para que se expandan a ocuparlo entero*/
+    place-items: stretch;
+    /*Configuramos los gaps entre elementos del grid filas columnas*/
+    gap: 1em 2em;
+}
+
+h1{
+    grid-area: h1;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+section:first-child{
+    grid-area: section1;
+}
+section:last-child{
+    grid-area: section2;
+}
+footer{
+    grid-area: footer;
+}
+
+
