@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Lenguaje Ruby - formulario</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <meta name ="author" content ="Pablo Argallero Fernández" />
+
+    
+    <meta name ="description" content ="Pequeño formulario sobre la opinión de Ruby on Rails" />
+
+    <meta name ="keywords" content ="programación,lenguaje,Ruby,formulario,opinión" />
+
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+
+</head>
+
+<body>
+    
+    <h1>Lenguaje Ruby</h1>
+    <!--Añadimos el menu de navegación-->
+    <nav>
+        <a title="Aspectos generales"
+            accesskey="a"
+            tabindex="1"
+            href="index.html">Aspectos generales</a>
+    
+        <a title="Características"
+            accesskey="c"
+            tabindex="2"
+            href="caracteristicas.html">Características</a>
+
+        <a title="Ruby on rails"
+            accesskey="y"
+            tabindex="3"
+            href="rubyOnRails.html">Ruby on rails</a>
+
+        <a title="Formulario de opinión"
+            accesskey="o"
+            tabindex="4"
+            href="formulario.html">Formulario de opinión</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Conclusión</h2>
+
+            <p>Ruby es sin duda un lenguaje con alta importancia en el mundo del desarrollo web y trae consigo una serie de frameworks y posibilidades que han marcado la historia del desarrollo web global.</p>
+
+            <img src="multimedia/archivos_graficos/lenguajes_mas_usados.png" alt="Logo Ruby"/>
+
+            <p>La idea de esta página es dar una pequeña introducción al mundo de Ruby abordando los principales aspectos que este tiene de forma resumida. Esperamos que la página haya sido de su agrado, para nosotros significaría mucho que dejaras tu opinión en el formulario que puedes encontrar en esta página.</p>
+        </section>
+        <section>
+            <h2>Danos tu opinión</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p><label for="nombre">Nombre de usuario:<input id="nombre"></label></p>
+                    <p><label for="telefono">Telefono: <input id="telefono" type=tel></label></p>
+                    <p><label for="mail">Dirección de correo: <input id="mail" type=email></label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>¿Te ha sido util la información de la página?</legend>
+                    <p><input id="radioSi" type="radio"/><label for="radioSi">Si</label></p> 
+                    <p><input id="radioNo" type="radio"/><label for="radioNo">No</label></p>
+                </fieldset>
+                <p><label for="opinion">Opinión: </label><textarea id="opinion"></textarea></p>
+                <p><button>Enviar opinión</button></p>
+            </form>
+        </section>
+     </main>
+     <footer> 
+        <p>Software y estándares para la web (SEW) - Grado en Ingeniería Informática del Software</p>
+        <p>Pablo Argallero Fernández UO283216</p>
+       
+        <img src = "multimedia/archivos_graficos/HTML5.png" alt = "HTML válido"/>
+        <img src = "multimedia/archivos_graficos/CSS3.png" alt = "CSS válido"/>
+    </footer>
+        
+   
+</body>
+</html>

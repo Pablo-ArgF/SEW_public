@@ -1,0 +1,86 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Este documento incluye todo lo relativo a los layouts del sitio web.
+    La estructura de este documento es la siguiente:
+        -LAYOUT PARA LA BARRA DE NAVEGACIÓN
+        -LAYOUT DE LA SECCION PRINCIPAL DE LA PÁGINA - organizacion de las secciones dentro de pantalla
+        -LAYOUT PARA LOS PARRAFOS E IMAGEN DEL HEADER
+        -LAYOUT PARA LOS ELEMENTOS DE DENTRO DE LAS SECCIONES - organizacion de los elementos de dentro de las secciones
+******************/
+
+/*----------------------------------------------------------------*/
+/*---------------LAYOUT PARA LA BARRA DE NAVEGACIÓN---------------*/
+/*----------------------------------------------------------------*/
+
+nav{/*especidad = 001*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em 3em;
+}
+
+/*-------------------------------------------------------------------------*/
+/*---------------LAYOUT DE LA SECCIÓN PRINCIPAL DE LA PÁGINA---------------*/
+/*-------------------------------------------------------------------------*/
+
+main{ /*especidad = 001*/
+    display: flex;
+    flex-flow: row wrap;/*indicamos la posibilidad de que los elementos ocupen mas de una linea organizandose el filas*/
+    justify-content: space-evenly;/*dejamos espacio entre los elementos*/
+    align-items: flex-start;/*hacemos que si un bloque se acaba no se estire hasta abajo*/
+    align-content: stretch;
+    gap: 1em 2em;
+}
+
+section{ /*especidad = 001*/
+    flex-grow: 1;
+    flex-basis: 40%;
+}  
+
+/*--------------------------------------------------------------------------*/
+/*---------------LAYOUT PARA LOS PARRAFOS E IMAGEN DEL HEADER---------------*/
+/*--------------------------------------------------------------------------*/
+
+header{ /*especidad = 001*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "pic p1 p1 p1 p1"
+      "p2 p2 p2 p2 p2"
+      "p3 p3 p3 p3 p3";
+
+    place-items: stretch;
+}
+header img{ /*especidad = 002*/
+    grid-area: pic;
+    place-self: center;
+}
+header>p:nth-of-type(1){ /*especidad = 012*/
+    grid-area: p1;
+}
+header>p:nth-of-type(2){ /*especidad = 012*/
+    grid-area: p2;
+}
+header>p:nth-of-type(3){ /*especidad = 012*/
+    grid-area: p3;
+} 
+
+/*----------------------------------------------------------------------------------*/
+/*---------------LAYOUT PARA LOS ELEMENTOS DE DENTRO DE LAS SECCIONES---------------*/
+/*----------------------------------------------------------------------------------*/
+
+main>section{ /*especificidad = 012*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+/*hacemos que los elemntos multimedia y las tablas se alineen al centro de su seccion*/
+main img , main audio, main video, main table{ /*especidad = 002*/
+    align-self: center;
+}
+
