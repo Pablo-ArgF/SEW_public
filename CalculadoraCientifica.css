@@ -1,0 +1,132 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Descipción de los estilos que contiene
+******************/
+
+input[type="button"]{
+
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-size: 1.2em;
+    size: 2em;
+    border: none;
+}
+ 
+/*pintamos los botones de los numeros de un color mas claro*/
+input[type="button"][value="0"],
+input[type="button"][value="1"],
+input[type="button"][value="2"],
+input[type="button"][value="3"],
+input[type="button"][value="4"],
+input[type="button"][value="5"],
+input[type="button"][value="6"],
+input[type="button"][value="7"],
+input[type="button"][value="8"],
+input[type="button"][value="9"],
+input[type="button"][value="."]
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+input[type="button"][value="MC"],
+input[type="button"][value="MR"],
+input[type="button"][value="MS"],
+input[type="button"][value="M+"],
+input[type="button"][value="M-"]
+{
+    background-color: inherit;
+    color: black;
+}
+
+input[type="button"][value="deg"],
+input[type="button"][value="rad"],
+input[type="button"][value="hyp"],
+input[type="button"][value="F-E"]
+{
+    background-color: inherit;
+    color: black;
+    font-size: 0.9em;
+}
+
+input[type="button"][value="▼"]
+{
+    background-color: rgb(151, 161, 213);
+}
+
+
+section{
+    padding: 1em;
+    background-color: rgb(237, 237, 237);
+}
+
+footer{
+    padding: 1em;
+}
+
+
+input[type="text"]{
+    background-color: inherit;
+    border: 0em;
+   color: black;
+   font-size: 2em;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type="text"]:first-of-type{
+    /*override al tamaño de fuente para hacerlo mas pequeño*/
+   font-size: 1.2em;
+   border-bottom: 0.1em solid grey;
+   
+}
+
+
+/********************************
+LAYOUT
+*********************************/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+section 
+{
+   display: grid;
+   grid-template-columns: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta]1fr [ultima];
+   grid-template-rows: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta] 1fr
+                        [sexta]1fr
+                        [septima] 1fr 
+                        [octaba] 1fr
+                        [novena]1fr
+                        [decima]1fr
+                        [undecima]1fr [ultima];
+   grid-gap: 0.5em;
+   
+}
+
+/*configuramos tamaño del input*/
+input[type="text"]{
+    grid-column: primera / ultima;
+}
+
+
+section input[type="button"][value="deg"],
+section input[type="button"][value="rad"]
+{
+    grid-column: tercera;
+}
+
+

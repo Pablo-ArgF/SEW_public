@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Simulador de una calculadora RPN</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <meta name ="author" content ="Pablo Argallero Fernández" />
+
+    <meta name ="description" content ="Simulador de una calculadora RPN" />
+
+    <meta name ="keywords" content ="calculadora,polaca,RPN,simulador" />
+
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+
+    <script src="CalculadoraRPN.js"></script>
+</head>
+
+<body>
+
+    <h1>Simulador de calculadora RPN</h1>
+
+    <p>Agregar una guía de uso para la calculadora usando el teclado:</p>
+
+    <section>
+        <!-- Representa la pila -->
+        <textarea readonly="true" ></textarea>
+        <!-- Representa el número siendo insertado actualmente -->
+        <input type="text" readonly="true">
+
+        <input type="button" value="x^2" onclick="calculadora.pow2()" >
+        <input type="button" value="x^y" onclick="calculadora.powY()">
+        <input type="button" value="sin" onclick="calculadora.sin()">
+        <input type="button" value="cos" onclick="calculadora.cos()">
+        <input type="button" value="tan" onclick="calculadora.tan()">
+
+        <input type="button" value="√" onclick="calculadora.raiz()">
+        <input type="button" value="10^x" onclick="calculadora.diezPow()" >
+        <input type="button" value="log" onclick="calculadora.log()">
+        <input type="button" value="exp" onclick="calculadora.exp()">
+        <input type="button" value="mod" onclick="calculadora.mod()">
+
+        <input type="button" value="▲" onclick="calculadora.alt()">
+        <input type="button" value="CE" onclick="calculadora.ce()">
+        <input type="button" value="C" onclick="calculadora.c()">
+        <input type="button" value="del" onclick="calculadora.del()">
+        <input type="button" value="/" onclick="calculadora.division()">
+
+        <input type="button" value="pi" onclick="calculadora.pi()" >
+        <input type="button" value="7" onclick="calculadora.digitos('7')">
+        <input type="button" value="8" onclick="calculadora.digitos('8')">
+        <input type="button" value="9" onclick="calculadora.digitos('9')">
+        <input type="button" value="x" onclick="calculadora.multiplicacion()">
+
+        <input type="button" value="n!" onclick="calculadora.fact()">
+        <input type="button" value="4" onclick="calculadora.digitos('4')">
+        <input type="button" value="5" onclick="calculadora.digitos('5')">
+        <input type="button" value="6" onclick="calculadora.digitos('6')">
+        <input type="button" value="-" onclick="calculadora.resta()">
+        
+        <input type="button" value="+/-" onclick="calculadora.cambioDeSigno()">
+        <input type="button" value="1" onclick="calculadora.digitos('1')">
+        <input type="button" value="2" onclick="calculadora.digitos('2')">
+        <input type="button" value="3" onclick="calculadora.digitos('3')">
+        <input type="button" value="+" onclick="calculadora.suma()">
+
+        <input type="button" value="%" onclick="calculadora.porcentaje()">
+        <input type="button" value="." onclick="calculadora.punto()">
+        <input type="button" value="0" onclick="calculadora.digitos('0')">
+        <input type="button" value="Enter" onclick="calculadora.enter()">
+    </section>
+    <footer>
+        <p>Pablo Argallero Fernández - UO283216</p>
+        <img src = "multimedia/HTML5.png" alt = "HTML válido"/>
+        <img src = "multimedia/CSS3.png" alt = "CSS válido"/>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.write("<p>Nombre: " + infoNavegador.nombre +"</p>");

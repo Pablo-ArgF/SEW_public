@@ -1,0 +1,31 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Descipción de los estilos que contiene
+******************/
+
+/*Aplicamos a body el estilo*/
+body /*especifidad =  1*/
+{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(27, 0, 178);
+}
+h2{
+    color: rgb(1, 90, 1);
+}
+
+h3{
+    color: rgb(85, 0, 0);
+}
+h4{
+    color: rgb(44, 29, 0);
+}
+
+
+
+/*los parrafos heredan del body*/
