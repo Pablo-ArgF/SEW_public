@@ -9,8 +9,8 @@ input[type="button"]{
     background-color: rgb(219, 219, 219);
     color: black;
     font-size: 1.2em;
-    size: 2em;
     border: none;
+    padding: 0.6em;
 }
  
 /*pintamos los botones de los numeros de un color mas claro*/
@@ -71,7 +71,6 @@ input[type="text"]{
     border: 0em;
    color: black;
    font-size: 2em;
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 input[type="text"]:first-of-type{
@@ -117,9 +116,15 @@ section
    
 }
 
-/*configuramos tamaño del input*/
 input[type="text"]{
+    display: block;
+    width: 100%;
+}
+
+/*configuramos tamaño del input*/
+label{
     grid-column: primera / ultima;
+    align-self: center;
 }
 
 

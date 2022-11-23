@@ -108,13 +108,13 @@ class PilaManager {
      */
     actualizarPilas() {
         //actualizamos la pila del orden
-        document.querySelector("textarea:nth-of-type(1)").value = this.pOrden.getRepresentacion();
+        document.querySelector("label:nth-of-type(1) textarea").value = this.pOrden.getRepresentacion();
 
         //actualizamos la pila de la base
-        document.querySelector("textarea:nth-of-type(2)").value = this.pBase.getRepresentacion();
+        document.querySelector("label:nth-of-type(2) textarea").value = this.pBase.getRepresentacion();
 
         //actualizamos la pila del valor
-        document.querySelector("textarea:nth-of-type(3)").value = this.pValor.getRepresentacion();
+        document.querySelector("label:nth-of-type(3) textarea").value = this.pValor.getRepresentacion();
     }
 }
 

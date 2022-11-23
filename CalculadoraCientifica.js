@@ -608,7 +608,7 @@ class CalculadoraCientifica extends Calculadora {
      */
     actualizarPantalla() {
         document
-            .querySelector("input[type='text']:nth-of-type(2)")
+            .querySelector("label:nth-of-type(2) input[type='text']")
             .setAttribute("value", this.pantalla + "");
     }
 
