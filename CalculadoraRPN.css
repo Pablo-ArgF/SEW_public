@@ -57,7 +57,25 @@ input[type="text"]{
    font-family: "Lucida Console", "Courier New", monospace;
 }
 
+h2{
+     background-color: rgb(214, 159, 159);
+     padding: 0.5em;
+     border-radius: 0.2em;
+}
+h1{
+    background-color: black;
+    color: white;
+    padding: 1.2em;
+    border-radius: 0.2em;
+}
 
+header{
+    background-color: rgb(237, 237, 237);
+    margin: 1em;
+}
+header p{
+    margin: 1em;
+}
 
 /********************************
 LAYOUT
@@ -118,11 +136,17 @@ input[type="button"][value="Enter"]{
     grid-column: cuarta / ultima;
 }
 
+header{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/*Configuramos el tamaño del boton +*/
-/* input[value="+"]{
-    grid-row: quinta /  ultima;
-    grid-column: cuarta/quinta;
-} */
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 

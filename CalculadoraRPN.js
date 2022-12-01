@@ -134,21 +134,31 @@ class CalculadoraRPN {
     }
 
     digitos(digito) {
-        if (this.pantalla == "Error") {
-            //si hay error, reiniciamos la calculadora
-            this.c();
-        }
+        this.validarSiErrorParaLimpiar();
 
         this.pantalla += digito;
         this.actualizarPantalla();
     }
+    validarSiErrorParaLimpiar()
+    {
+        if (this.pantalla == "Error") {
+            //si hay error, reiniciamos la calculadora
+            this.c();
+        }
+    }
     punto() {
+        this.validarSiErrorParaLimpiar();
+
         this.pantalla += ".";
         this.actualizarPantalla();
     }
 
-    showError() {
-        this.pantalla = "Error";
+    showError(msg) {
+        //enseñamos el error en la pila
+        var texto = "Error: "+msg;
+        document.querySelector("textarea").value =this.pila.getRepresentacion()+""+  texto;
+        //enseñamos el error en la pantalla
+        this.pantalla ="Error";
         this.actualizarPantalla();
     }
 
@@ -157,7 +167,7 @@ class CalculadoraRPN {
         for (var i = 0; i < n; i++) {
             var poped = this.pila.pop();
             if (Number.isNaN(poped)) {
-                this.showError();
+                this.showError("No hay suficientes operandos en la pila");
                 return;
             }
             res.push(new Number(poped));
@@ -308,7 +318,7 @@ class CalculadoraRPN {
         if (this.pantalla != "Error"){
             if(operandos[0] == 0){ 
                 //modulo de 0 da NaN y no queremos eso en la pila
-                this.showError(); //enseñamos error
+                this.showError("Modulo de 0 no es posible"); //enseñamos error
                 return; //no hacemos el calculo
             }
             this.insertarValor(operandos[1] % operandos[0]);
