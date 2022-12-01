@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Simulador de una calculadora RPN</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <meta name="author" content="Pablo Argallero Fernández" />
+
+    <meta name="description" content="Simulador de una calculadora RPN" />
+
+    <meta name="keywords" content="calculadora,polaca,RPN,simulador" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <script src="CalculadoraRPN.js"></script>
+</head>
+
+<body>
+
+    <h1>Simulador de calculadora RPN</h1>
+    <header>
+        <h2>Manual de uso</h2>
+        <p>La calculadora RPN funciona basándose en el uso de la pila (pantalla superior de la calculadora). Para
+            realizar las operaciones, cada uno de los operandos han de ser insertados en la pila escribiendolos en
+            pantalla (pantalla inferior) y pulsando el botón ENTER. Una vez los operandos de la función u operación
+            deseada han sido insertados, presione el botón de la correspondiente función o operación. La operación o
+            función tomará N operandos (los necesarios para esa operación) y devolverá a la pila el resultado.</p>
+
+            <p>Las calculadoras RPN no disponen de sistema de paréntesis, para disponer de prioridad dentro de las
+                operaciones han de usarse las operaciones en un orden concreto que permita acabar obteniendo los operandos
+                ordenados en la pila</p>
+
+
+        <p>A continuación un ejemplo para la operación (3+1)*2:</p>
+        <figure>
+            <img src="multimedia/ejemploOperacion_1.png"
+                alt="Primer paso del ejemplo de operación - introduccion del 3 y 1 en pila" />
+            <figcaption>
+                Insertamos el 3 (presionando en el 3 y en ENTER) y el 2 (presionamos el 2 y ENTER)
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="multimedia/ejemploOperacion_2.png"
+                alt="Segundo paso del ejemplo de operación - suma de 3 y 1 para obtener la prioridad" />
+            <figcaption>
+                Aplicamos la suma (3+1) primero ya que la calculadora RPN no dispone de parentesis apretando el +. En la pila los dos operandos (3 y 1) serán sumados y se insertará el resultado, en este caso, 4.En este paso insertamos tambien el número 2 en la pila.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="multimedia/ejemploOperacion_3.png"
+                alt="Tercer paso del ejemplo de operación - aplicar multiplicación" />
+            <figcaption>
+                Por último, aplicamos la multiplicación con los dos operandos de la pila (4 y 2). Los dos operandos son multiplicados y se inserta en la pila el valor 8.
+            </figcaption>
+        </figure>
+        
+    </header>
+
+    <section>
+        <!-- Representa la pila -->
+        <label for="pila">Pila<textarea readonly id="pila"></textarea></label>
+        <!-- Representa el número siendo insertado actualmente -->
+        <label for="pantalla">Pantalla calculadora RPN <input type="text" id="pantalla" readonly></label>
+
+        <input type="button" value="x^2" onclick="calculadora.pow2()">
+        <input type="button" value="x^y" onclick="calculadora.powY()">
+        <input type="button" value="sin" onclick="calculadora.sin()">
+        <input type="button" value="cos" onclick="calculadora.cos()">
+        <input type="button" value="tan" onclick="calculadora.tan()">
+
+        <input type="button" value="√" onclick="calculadora.raiz()">
+        <input type="button" value="10^x" onclick="calculadora.diezPow()">
+        <input type="button" value="log" onclick="calculadora.log()">
+        <input type="button" value="exp" onclick="calculadora.exp()">
+        <input type="button" value="mod" onclick="calculadora.mod()">
+
+        <input type="button" value="▲" onclick="calculadora.alt()">
+        <input type="button" value="CE" onclick="calculadora.ce()">
+        <input type="button" value="C" onclick="calculadora.c()">
+        <input type="button" value="del" onclick="calculadora.del()">
+        <input type="button" value="/" onclick="calculadora.division()">
+
+        <input type="button" value="pi" onclick="calculadora.pi()">
+        <input type="button" value="7" onclick="calculadora.digitos('7')">
+        <input type="button" value="8" onclick="calculadora.digitos('8')">
+        <input type="button" value="9" onclick="calculadora.digitos('9')">
+        <input type="button" value="x" onclick="calculadora.multiplicacion()">
+
+        <input type="button" value="n!" onclick="calculadora.fact()">
+        <input type="button" value="4" onclick="calculadora.digitos('4')">
+        <input type="button" value="5" onclick="calculadora.digitos('5')">
+        <input type="button" value="6" onclick="calculadora.digitos('6')">
+        <input type="button" value="-" onclick="calculadora.resta()">
+
+        <input type="button" value="+/-" onclick="calculadora.cambioDeSigno()">
+        <input type="button" value="1" onclick="calculadora.digitos('1')">
+        <input type="button" value="2" onclick="calculadora.digitos('2')">
+        <input type="button" value="3" onclick="calculadora.digitos('3')">
+        <input type="button" value="+" onclick="calculadora.suma()">
+
+        <input type="button" value="%" onclick="calculadora.porcentaje()">
+        <input type="button" value="." onclick="calculadora.punto()">
+        <input type="button" value="0" onclick="calculadora.digitos('0')">
+        <input type="button" value="Enter" onclick="calculadora.enter()">
+    </section>
+    <footer>
+        <p>Pablo Argallero Fernández - UO283216</p>
+        <img src="multimedia/HTML5.png" alt="HTML válido" />
+        <img src="multimedia/CSS3.png" alt="CSS válido" />
+    </footer>
+</body>
+
+</html>

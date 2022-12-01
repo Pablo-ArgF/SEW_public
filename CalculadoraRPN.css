@@ -1,0 +1,152 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Descipción de los estilos que contiene
+******************/
+
+input[type="button"]{
+
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-size: 1.2em;
+    border: none;
+    padding: 0.6em;
+}
+ 
+/*pintamos los botones de los numeros de un color mas claro*/
+input[type="button"][value="0"],
+input[type="button"][value="1"],
+input[type="button"][value="2"],
+input[type="button"][value="3"],
+input[type="button"][value="4"],
+input[type="button"][value="5"],
+input[type="button"][value="6"],
+input[type="button"][value="7"],
+input[type="button"][value="8"],
+input[type="button"][value="9"],
+input[type="button"][value="."]
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+input[type="button"][value="Enter"]{
+    background-color: rgb(214, 159, 159);
+}
+
+input[type="button"][value="▼"]
+{
+    background-color: rgb(151, 161, 213);
+}
+
+
+section{
+    padding: 1em;
+    background-color: rgb(237, 237, 237);
+}
+
+footer{
+    padding: 1em;
+}
+
+
+input[type="text"]{
+    border: 0em;
+   color: black;
+   font-size: 1.2em;
+   font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h2{
+     background-color: rgb(214, 159, 159);
+     padding: 0.5em;
+     border-radius: 0.2em;
+}
+h1{
+    background-color: black;
+    color: white;
+    padding: 1.2em;
+    border-radius: 0.2em;
+}
+
+header{
+    background-color: rgb(237, 237, 237);
+    margin: 1em;
+}
+header p{
+    margin: 1em;
+}
+
+/********************************
+LAYOUT
+*********************************/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+section 
+{
+   display: grid;
+   grid-template-columns: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta]1fr [ultima];
+   grid-template-rows: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta] 1fr
+                        [sexta]1fr
+                        [septima] 1fr 
+                        [octaba] 1fr
+                        [novena]1fr
+                        [decima]1fr 
+                        [undecima]1fr [ultima];;
+   grid-gap: 0.5em;
+   
+}
+
+
+textarea{
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+
+label:nth-of-type(1) {
+    grid-row: primera /cuarta;
+    grid-column: primera / ultima;
+}
+label textarea{
+    resize: none;
+}
+
+/*configuramos tamaño del input*/
+label:nth-of-type(2){
+    grid-column: primera / ultima;
+    grid-row: cuarta;
+}
+input[type="button"][value="Enter"]{
+    grid-column: cuarta / ultima;
+}
+
+header{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
