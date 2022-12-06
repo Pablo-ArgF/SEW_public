@@ -55,6 +55,14 @@ p{ /*especificidad = 1*/
     padding: 0.2em 1em;
 }
 
+header{
+    padding: 0.5em 1em;
+    background-color: rgb(229, 229, 229);
+}
+main{
+    padding: 0.3em;
+}
+
 
 /*--------------------------------------------------------------*/
 /*---------------CONFIGURACIÓN DE LOS ELEMENTOS h---------------*/
@@ -321,12 +329,6 @@ main section p:nth-of-type(10){ /*puesta del sol*/
     grid-area: puestasol;
 }
 
-/*ponemos un borde a los elementos de la seccion*/
-/* main section p{
-    border-style: groove;
-    border-color: grey;
-    border-width: 0.2em;
-} */
 
 
 
