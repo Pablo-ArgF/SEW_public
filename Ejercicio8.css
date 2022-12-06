@@ -1,0 +1,336 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Contiene todo lo relativo a la estética de los elementos HTML
+    las principales secciones de esta hoja de estilo son:
+        -CONFIGURACIÓN DE ELEMENTOS GENERALES - body ,footer,header,section,...
+        -CONFIGURACIÓN DE LOS ELEMENTOS h - h1,h2, ...
+        -CONFIGURACIÓN DE ELEMENTOS MULTIMEDIA - img
+
+******************/
+
+
+/*------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE ELEMENTOS GENERALES---------------*/
+/*------------------------------------------------------------------*/
+
+/*Aplicamos a body el estilo*/
+body /*especifidad =  1*/
+{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 1em 1.5em ; /*margen de 1em hacia arriba y abajo y de 1.5em para los lados*/
+}
+
+h1, footer /*especifidad =  2*/
+{
+    color: white;
+    background-color: #000000;   
+    border-radius: 1em;
+    
+    text-align: center;
+}
+
+/*hacemos que el margen del footer crezca para que se vea separado*/
+footer{ /*especificidad = 001*/
+    margin-top: 1em;
+}
+
+
+section /*especifidad =  1*/
+{
+    /*hereda de body el color de letra negro*/
+    background-color: rgb(209, 209, 209);
+    
+    border-radius: 0.2em;
+}
+
+p{ /*especificidad = 1*/
+    /* hereda el color de la letra y fuente de body */
+
+    /*añadimos el padding para separar los parrafos de los laterales de
+    siendo la primera la distancia top&bottom y la segunda la distancia hacia los lados*/
+    padding: 0.2em 1em;
+}
+
+
+/*--------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LOS ELEMENTOS h---------------*/
+/*--------------------------------------------------------------*/
+
+h1{ /*especificidad = 001*/
+    /*hereda la mayoría de sus atributos del selector de arriba*/
+    padding: 1em;
+}
+
+h2 /*especifidad =  1*/
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #343434;
+    color: white;
+
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+h3{ /*especifidad =  1*/
+    background-color: #6c6c6c;
+    color: white;
+
+    padding: 0.2em;
+    border-radius: 0.2em;
+
+    text-align: center;
+
+}
+
+/*----------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LOS ENLACES---------------*/
+/*----------------------------------------------------------*/
+
+/*Queremos que los elementos a del nav, es decir los elementos de navegación 
+séan de color negro*/
+nav a{ /*especificidada = 002*/
+    /*hereda el fondo de su contenedor nav*/
+    color: black;
+}
+
+/*Los enlaces del documento tendrán un color rojizo*/
+a { /*especificidad = 001*/
+    /*hereda el fondo de su contenedor*/
+    color: #290a08;
+}
+
+a:visited{ /*especificidad 011*/
+    /*hereda el fondo de su contenedor*/
+    color: #691A16;
+}
+
+/*-----------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LISTAS Y LISTAS ANIDADAS---------------*/
+/*-----------------------------------------------------------------------*/
+
+/*Desactivamos los elementos bullet de las listas y de la listas anidadas*/
+ul, ul ul { /*especidad = 002*/
+    list-style: none;
+}
+/*los elementos de la lista tendran un bullet rojo*/
+ul li::before { /*especidad = 003*/
+    /*hereda el fondo de su contenedor*/
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+/*los elementos de la lista anidada tendran un bullet mas claro*/
+ul ul li::before{ /*especidad = 004*/
+    /*hereda el fondo de su contenedor*/
+    content: "\2022";
+    color: rgb(219, 91, 91);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/*---------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LAS TABLAS---------------*/
+/*---------------------------------------------------------*/
+
+table /*especificidad = 1*/
+{
+    /*color de letra heredado de body*/
+    background-color: #e2939b;
+    margin: 1em; /*hacemos que la tabla se separe de los laterales*/
+}
+
+table caption /*especificidad = 2*/
+{
+    /*hereda el fondo de su contenedor*/
+    color: white;
+    font-size: 1.2em;
+    background-color: #AA222B;
+
+}
+
+table th/*especificidad = 2*/
+{
+    color: white;
+    background-color: #8F3D41;
+    padding: 0.2em;
+}
+
+table td/*especificidad = 2*/
+{
+    padding: 0.2em;
+}
+
+/*--------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LOS FORMULARIOS---------------*/
+/*--------------------------------------------------------------*/
+
+/*separamos el formulario de los bordes añadiendole un margin*/
+form{ /*especidad = 001*/
+    margin: 1em;
+}
+/*Hace que los titulos dentro del formulario de las secciones salgan en rojo*/
+form fieldset legend /*especidad = 3*/
+{
+    color: #6F1515;
+}
+
+/*configuramos la estética del boton dentro del formulario*/
+form button{/*especidad = 002*/
+    background-color: #bc0013;
+    color: white;
+    
+}
+/*colocamos un borde a los elementos input del formulario*/
+form input{/*especidad = 002*/
+    border-style: outset;
+    border-width: medium;
+    border-color: #aa3c47;
+}
+
+/*-----------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LOS ELEMENTOS MULTIMEDIA---------------*/
+/*-----------------------------------------------------------------------*/
+
+/*con*/
+main img{/*especidad = 002*/
+    width: 50%;
+    height: auto;
+}
+video {/*especidad = 001*/
+    width: 90%;
+    height: auto;
+    border-radius: 1em;
+}
+
+/*-----------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LOS ELEMENTOS TEXTAREA-----------------*/
+/*-----------------------------------------------------------------------*/
+
+textarea{
+    resize: none;
+    display: block;
+    width: 95%;
+    height: 50em;
+}
+
+
+
+/*****************
+    Pablo Argallero - UO283216
+    
+    Este documento incluye todo lo relativo a los layouts del sitio web.
+    La estructura de este documento es la siguiente:
+        -LAYOUT DE LA SECCION PRINCIPAL DE LA PÁGINA - organizacion de las secciones dentro de pantalla
+        -LAYOUT PARA LOS ELEMENTOS DE DENTRO DE LAS SECCIONES - organizacion de los elementos de dentro de las secciones
+******************/
+
+
+/*-------------------------------------------------------------------------*/
+/*---------------LAYOUT DE LA SECCIÓN PRINCIPAL DE LA PÁGINA---------------*/
+/*-------------------------------------------------------------------------*/
+
+main{ /*especidad = 001*/
+    display: flex;
+    flex-flow: row wrap;/*indicamos la posibilidad de que los elementos ocupen mas de una linea organizandose el filas*/
+    justify-content: space-evenly;/*dejamos espacio entre los elementos*/
+    align-items: flex-start;/*hacemos que si un bloque se acaba no se estire hasta abajo*/
+    align-content: stretch;
+    gap: 1em 2em;
+}
+
+section{ /*especidad = 001*/
+    flex-grow: 1;
+    flex-basis: 40%;
+}  
+
+
+/*----------------------------------------------------------------------------------*/
+/*---------------LAYOUT PARA LOS ELEMENTOS DE DENTRO DE LAS SECCIONES---------------*/
+/*----------------------------------------------------------------------------------*/
+
+main>section{ /*especificidad = 012*/
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5, 0.2fr);
+    grid-template-areas: 
+      "ciudad ciudad ciudad ciudad ciudad ciudad"
+      "pic pic temp temp temp temp"
+      "descr descr vien vien st st"
+      "pre pre nb nb hu hu"
+      "salisol salisol visi visi puestasol puestasol"
+      ;
+
+    place-items: stretch;
+    column-gap: 1em;
+}
+
+
+/*configuramos cada uno de los parrafos en su sitio*/
+main section img{
+    grid-area: pic;
+    /* width: 100%; */
+    height: 8em;
+    place-self: center;
+}
+main section h2{ /*ciudad*/
+    grid-area: ciudad;
+}
+
+main section p:nth-of-type(1){ /*descr*/
+    grid-area: descr;
+    place-self: center;
+}
+main section h3{ /*titulo temperatura*/
+    grid-area: ttemp;
+    place-self: center;
+    padding: 1em;
+}
+main section p:nth-of-type(2){ /*temperatura*/
+    grid-area: temp;
+}
+main section p:nth-of-type(3){ /*sensacion termica*/
+    grid-area: st;
+}
+main section p:nth-of-type(4){ /*porcentaje de ocurrencia de nubes*/
+    grid-area: nb;
+}
+main section p:nth-of-type(5){ /*presion*/
+    grid-area: pre;
+}
+main section p:nth-of-type(6){ /*humedad*/
+    grid-area: hu;
+}
+main section p:nth-of-type(7){ /*visibilidad*/
+    grid-area: visi;
+}
+main section p:nth-of-type(8){ /*vientos*/
+    grid-area: vien;
+}
+main section p:nth-of-type(9){ /*salida del sol*/
+    grid-area: salisol;
+}
+main section p:nth-of-type(10){ /*puesta del sol*/
+    grid-area: puestasol;
+}
+
+/*ponemos un borde a los elementos de la seccion*/
+/* main section p{
+    border-style: groove;
+    border-color: grey;
+    border-width: 0.2em;
+} */
+
+
+
+
+
+
+
