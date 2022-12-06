@@ -1,10 +1,10 @@
 <kml xmlns="http://www.opengis.net/kml/2.2"><Document>
 <Placemark>
-<name>Llanes, lugar de nacimiento de: Pablo Argallero Fernández</name>
+<name>Oviedo, lugar de nacimiento de: Pablo Argallero Fernández</name>
 <description>Lugar de nacimiento de Pablo Argallero Fernández</description>
 <Point>
 <coordinates>
-43.4198200, -4.7548500
+21.0,22.0
 </coordinates>
 </Point>
 </Placemark>
@@ -13,25 +13,25 @@
 <description>Lugar de Residencia de Pablo Argallero Fernández</description>
 <Point>
 <coordinates>
-43.272763,-5.589045
+33.0,85.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Barredos, lugar de nacimiento de: Juncal Gallo Gonzales</name>
+<name>Oviedo, lugar de nacimiento de: Juncal Gallo Gonzales</name>
 <description>Lugar de nacimiento de Juncal Gallo Gonzales</description>
 <Point>
 <coordinates>
-43.3602900,-5.8447600
+21.0,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>New York, lugar de residencia de: Juncal Gallo Gonzales</name>
+<name>Barredos, lugar de residencia de: Juncal Gallo Gonzales</name>
 <description>Lugar de Residencia de Juncal Gallo Gonzales</description>
 <Point>
 <coordinates>
-40.730610,	-73.935242
+28.0,85.0
 </coordinates>
 </Point>
 </Placemark>
@@ -40,7 +40,7 @@
 <description>Lugar de nacimiento de Pepe Ramon del Rey</description>
 <Point>
 <coordinates>
-43.5547300, -5.9248300
+222.242,22.0
 </coordinates>
 </Point>
 </Placemark>
@@ -49,7 +49,7 @@
 <description>Lugar de Residencia de Pepe Ramon del Rey</description>
 <Point>
 <coordinates>
-43.3602950,-5.8447620
+21.0,22.0
 </coordinates>
 </Point>
 </Placemark>
@@ -58,16 +58,16 @@
 <description>Lugar de nacimiento de Juan Fernández del Rey</description>
 <Point>
 <coordinates>
- 43.25 ,-5.76667
+678.242,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Colombia, lugar de residencia de: Juan Fernández del Rey</name>
+<name>Oviedo, lugar de residencia de: Juan Fernández del Rey</name>
 <description>Lugar de Residencia de Juan Fernández del Rey</description>
 <Point>
 <coordinates>
-4.1156735 ,-72.9301367
+21.0,22.0
 </coordinates>
 </Point>
 </Placemark>
@@ -76,7 +76,7 @@
 <description>Lugar de nacimiento de Cintia Fernandez Suarez</description>
 <Point>
 <coordinates>
-43.275087,-5.60476
+109.242,22.0
 </coordinates>
 </Point>
 </Placemark>
@@ -85,79 +85,79 @@
 <description>Lugar de Residencia de Cintia Fernandez Suarez</description>
 <Point>
 <coordinates>
- 43.53573,-5.66152
+123.242,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Washingtong DC, lugar de nacimiento de: Rosana Gallo Gonzales</name>
+<name>Oviedo, lugar de nacimiento de: Rosana Gallo Gonzales</name>
 <description>Lugar de nacimiento de Rosana Gallo Gonzales</description>
 <Point>
 <coordinates>
-38.89511, -77.03637
+21.0,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Las maldivas, lugar de residencia de: Rosana Gallo Gonzales</name>
+<name>Barredos, lugar de residencia de: Rosana Gallo Gonzales</name>
 <description>Lugar de Residencia de Rosana Gallo Gonzales</description>
 <Point>
 <coordinates>
-1.924992, 73.399658
+28.0,85.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>El congo, lugar de nacimiento de: Ivan Ramon del Rey</name>
+<name>Aviles, lugar de nacimiento de: Ivan Ramon del Rey</name>
 <description>Lugar de nacimiento de Ivan Ramon del Rey</description>
 <Point>
 <coordinates>
--0.6605788,14.8965794
+222.242,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Dubai, lugar de residencia de: Ivan Ramon del Rey</name>
+<name>Oviedo, lugar de residencia de: Ivan Ramon del Rey</name>
 <description>Lugar de Residencia de Ivan Ramon del Rey</description>
 <Point>
 <coordinates>
-25.276987, 55.296249
+21.0,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Caravia, lugar de nacimiento de: David Fernández del Monte</name>
+<name>Mieres, lugar de nacimiento de: David Fernández del Monte</name>
 <description>Lugar de nacimiento de David Fernández del Monte</description>
 <Point>
 <coordinates>
-43.4667,-5.1833
+678.242,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Sudafrica, lugar de residencia de: David Fernández del Monte</name>
+<name>Oviedo, lugar de residencia de: David Fernández del Monte</name>
 <description>Lugar de Residencia de David Fernández del Monte</description>
 <Point>
 <coordinates>
--28.4792625 ,24.6727135 
+21.0,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Berlin, lugar de nacimiento de: Julio Fernandez Suarez</name>
+<name>Sotrondio, lugar de nacimiento de: Julio Fernandez Suarez</name>
 <description>Lugar de nacimiento de Julio Fernandez Suarez</description>
 <Point>
 <coordinates>
-52.520008,13.404954
+109.242,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Andorra, lugar de residencia de: Julio Fernandez Suarez</name>
+<name>Gijón, lugar de residencia de: Julio Fernandez Suarez</name>
 <description>Lugar de Residencia de Julio Fernandez Suarez</description>
 <Point>
 <coordinates>
-42.5,1.6000000
+123.242,22.0
 </coordinates>
 </Point>
 </Placemark>
@@ -166,25 +166,25 @@
 <description>Lugar de nacimiento de Juanito Del Sur Gonzales</description>
 <Point>
 <coordinates>
-43.316123,-5.68223 
+15.0,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>La felguera, lugar de residencia de: Juanito Del Sur Gonzales</name>
+<name>Oviedo, lugar de residencia de: Juanito Del Sur Gonzales</name>
 <description>Lugar de Residencia de Juanito Del Sur Gonzales</description>
 <Point>
 <coordinates>
-43.306165442,-5.688497246 
+33.0,85.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Calpe, lugar de nacimiento de: Ricardo Ramon del Rey</name>
+<name>Aviles, lugar de nacimiento de: Ricardo Ramon del Rey</name>
 <description>Lugar de nacimiento de Ricardo Ramon del Rey</description>
 <Point>
 <coordinates>
-38.6447000,0.0445000
+222.242,22.0
 </coordinates>
 </Point>
 </Placemark>
@@ -193,43 +193,43 @@
 <description>Lugar de Residencia de Ricardo Ramon del Rey</description>
 <Point>
 <coordinates>
-43.3602900,-5.8447600 
+21.0,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Valencia de don Juan, lugar de nacimiento de: Carlos Fernández del Norte</name>
+<name>Cancún, lugar de nacimiento de: Carlos Fernández del Norte</name>
 <description>Lugar de nacimiento de Carlos Fernández del Norte</description>
 <Point>
 <coordinates>
-42.292530,-5.519120	
+198347.242,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Osaka, lugar de residencia de: Carlos Fernández del Norte</name>
+<name>Oviedo, lugar de residencia de: Carlos Fernández del Norte</name>
 <description>Lugar de Residencia de Carlos Fernández del Norte</description>
 <Point>
 <coordinates>
-34.672314, 135.484802
+21.0,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Tokio, lugar de nacimiento de: Lucía Fernandez Suarez</name>
+<name>Sotrondio, lugar de nacimiento de: Lucía Fernandez Suarez</name>
 <description>Lugar de nacimiento de Lucía Fernandez Suarez</description>
 <Point>
 <coordinates>
-35.652832, 139.839478
+109.242,22.0
 </coordinates>
 </Point>
 </Placemark>
 <Placemark>
-<name>Buenos Aires, lugar de residencia de: Lucía Fernandez Suarez</name>
+<name>Gijón, lugar de residencia de: Lucía Fernandez Suarez</name>
 <description>Lugar de Residencia de Lucía Fernandez Suarez</description>
 <Point>
 <coordinates>
--34.603722, -58.381592
+123.242,22.0
 </coordinates>
 </Point>
 </Placemark>
