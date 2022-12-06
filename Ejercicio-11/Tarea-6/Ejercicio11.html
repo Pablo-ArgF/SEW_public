@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+   <!-- Datos que describen el documento -->
+   <meta charset="UTF-8" />
+   <title>Ejercicio11- tarea 6 - Encuentra pizza</title>
+   <link rel="stylesheet" type="text/css" href="Ejercicio11.css" />
+   <meta name="author" content="Pablo Argallero Fernández" />
+
+   <meta name="description"
+      content="Uso de la API de Google maps para marcar la ruta desde la posicion del usuario hasta la pizzería más cercana" />
+   <meta name="keywords" content="Geolocalizacion,GoogleMaps,pizza,pizzería" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="Ejercicio11.js"></script>
+   <!-- cargamos la library de places para poder hacer la busca -->
+   <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaoWI1RlZhtFXMThX0acROZGigNsFrJL8&libraries=places&callback=geo.initMap">
+   </script>
+
+</head>
+
+<body>
+   <h1>Ejercicio 11.6 - Buscador pizza</h1>
+   <main>
+      <header>
+         <img src="multimedia/pizza.png" alt="Imagen de una pizza">
+         <p>A continuación se muestra el mapa de google maps marcando la ruta desde tu ubicación hasta la pizzería más cercana en coche.</p>
+         
+      </header>
+
+   </main>
+   <footer>
+      <img src="multimedia/HTML5.png" alt="HTML válido" />
+      <img src="multimedia/CSS3.png" alt="CSS válido" />
+   </footer>
+</body>
+
+</html>
