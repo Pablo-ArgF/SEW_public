@@ -1,0 +1,127 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Contiene todo lo relativo a la estética del documento HTML 
+    junto con el layout de las secciones que permite ser colocado correctamente
+
+******************/
+
+
+/*------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE ELEMENTOS GENERALES---------------*/
+/*------------------------------------------------------------------*/
+
+/*Aplicamos a body el estilo*/
+body /*especifidad =  1*/
+{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 1em 1.5em ; /*margen de 1em hacia arriba y abajo y de 1.5em para los lados*/
+}
+
+h1, footer /*especifidad =  2*/
+{
+    color: white;
+    background-color: black;   
+    border-radius: 1em;
+    
+    text-align: center;
+}
+
+/*hacemos que el margen del footer crezca para que se vea separado*/
+footer{ /*especificidad = 001*/
+    margin-top: 1em;
+}
+
+
+section /*especifidad =  1*/
+{
+    /*hereda de body el color de letra negro*/
+    background-color: rgb(209, 209, 209);
+    
+    border-radius: 0.2em;
+    margin: 2em;
+}
+
+section > section{ /*seccion de los precios porhoras*/
+    background-color: rgb(229, 229, 229);
+}
+
+
+/*--------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LOS ELEMENTOS h---------------*/
+/*--------------------------------------------------------------*/
+
+h1{ /*especificidad = 001*/
+    /*hereda la mayoría de sus atributos del selector de arriba*/
+    padding: 1em;
+}
+
+h2 /*especifidad =  1*/
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #1b1b1b;
+
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DEL LAYOUT DE LA SECCION---------------------*/
+/*--------------------------------------------------------------------------*/
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+p:nth-of-type(1), p:nth-of-type(2), p:nth-of-type(3){
+    flex-basis:content
+}
+
+section > section{/* precios por hora */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 0.2em;
+    column-gap: 0.2em;
+}
+section > section > h3{
+    /*hacemos que ocupe toda una fila*/
+    flex-basis: 100%;
+    align-self: center;
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LOS COLORES DE LOS PARRAFOS---------------*/
+/*--------------------------------------------------------------------------*/
+
+main > section:first-of-type > p{
+    background-color: rgb(82, 82, 82);
+    color: white;
+    padding: 1em;
+    border-radius: 0.1em;
+}
+
+section > section > p{
+    border: 0.2em;
+    border-style: solid;
+    border-color: rgb(55, 55, 55);
+    background-color: rgb(246, 255, 144);
+    border-radius: 0.1em;
+    padding: 1em;
+}
+
+
+
+
+
+
+
+
+
