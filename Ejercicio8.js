@@ -8,7 +8,7 @@ class Meteorologia {
         this.codigoPais = "ES";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.urlP1 = "http://api.openweathermap.org/data/2.5/weather?q=";
+        this.urlP1 = "https://api.openweathermap.org/data/2.5/weather?q=";
         this.urlP2 = "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
 
     }
