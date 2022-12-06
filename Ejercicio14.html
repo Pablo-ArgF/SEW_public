@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+   <!-- Datos que describen el documento -->
+   <meta charset="UTF-8" />
+   <title>Ejercicio14 - gestor de biblioteca de imagenes</title>
+   <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+   <meta name="author" content="Pablo Argallero Fernández" />
+
+   <meta name="description"
+      content="Aplicación de gestión usuarios y grupos. Permite añadir grupos nuevos y usuarios y asignar un grupo por usuario. Permite ademas la carga de un fichero con datos" />
+   <meta name="keywords" content="DragAndDrop,indexedDB,File API, grupos,usuarios" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+   <script src="Ejercicio14.js"></script>
+
+   
+
+</head>
+
+<body>
+   <h1>Ejercicio 14 - Gestor de grupos y usuarios</h1>
+   <main>
+      <section>
+         <h2>Panel de control</h2>
+         <p>En esta sección se generan equipos y usuarios para despues ser asignados. Para asignar un usuario a un grupo arrastra el usuario hasta el grupo y este pasará a aparecer en la lista de usuarios para ese grupo.</p>
+         <section>
+            <h3>Generación de un usuario</h3>
+            <form>
+               <fieldset>
+                   <legend>Datos del usuario</legend>
+                   <p><label for="dni">DNI:<input type="text"  id="dni"></label></p>
+                   <p><label for="nombre">Nombre de usuario:<input type="text"  id="nombre"></label></p>
+                   <p><label for="telefono">Telefono: <input type="text" id="telefono" type=tel></label></p>
+                   <p><label for="mail">Dirección de correo: <input type="text" id="mail" type=email></label></p>
+               </fieldset>
+               <input type="button" value="Registrar usuario" onclick="gestor.insertarUsuario()">
+           </form>
+         </section>
+
+         <section>
+            <h3>Generación de un grupo</h3>
+            <form>
+               <fieldset>
+                   <legend>Datos del grupo</legend>
+                   <p><label for="nombregrupo">Nombre del grupo:<input type="text" id="nombregrupo"></label></p>
+               <p><label for="descrgrupo">Descripcion del grupo: </label><textarea id="descrgrupo"></textarea></p>
+            </fieldset>
+            <input type="button" value="Registrar grupo" onclick="gestor.insertarGrupo()">
+            
+           </form>
+         </section>
+         <section>
+            <h3>Información del sistema</h3>
+            <label for="descrgrupo">Informe del sistema: </label><textarea id="descrgrupo"></textarea>
+         </section>
+         <section>
+            <h3>Inserción de datos por archivo</h3>
+            <p>Seleccione un archivo json que contenga el formato correcto (usar el ejemplo en la carpeta como referencia).</p>
+            <input type="file" accept=".json" onchange="gestor.cargarDeArchivo(this.files[0])">
+         </section>
+      </section>
+      <section>
+         <h2>Representación de los grupos</h2>
+      </section>
+      <section>
+         <h2>Representación de los usuarios</h2>
+      </section>
+
+   </main>
+   <footer>
+      <img src="multimedia/HTML5.png" alt="HTML válido" />
+      <img src="multimedia/CSS3.png" alt="CSS válido" />
+   </footer>
+</body>
+
+</html>

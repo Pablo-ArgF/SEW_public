@@ -1,31 +1,46 @@
 {
-    "arrayColores":[{
-            "nombreColor":"rojo",
-            "valorHexadec":"#f00"
+    "usuarios":[
+        {
+            "dni": "123456789A",
+            "nombreU":"Pablo",
+            "telefono":"12345789",
+            "correo":"pablo@gmail.com",
+            "grupo":"salsa"
         },
         {
-            "nombreColor":"verde",
-            "valorHexadec":"#0f0"
+            "dni": "12345689B",
+            "nombreU":"Pedro",
+            "telefono":"12345789",
+            "correo":"pedro@gmail.com",
+            "grupo":"yoga"
         },
         {
-            "nombreColor":"azul",
-            "valorHexadec":"#00f"
+            "dni": "1123456789C",
+            "nombreU":"Juncal",
+            "telefono":"12345789",
+            "correo":"juncal@gmail.com",
+            "grupo":"salsa"
         },
         {
-            "nombreColor":"cyan",
-            "valorHexadec":"#0ff"
+            "dni": "123456789D",
+            "nombreU":"Juana",
+            "telefono":"12345789",
+            "correo":"juana@gmail.com",
+            "grupo":"jazz"
+        }
+    ],
+    "grupos":[
+        {
+            "nombre":"jazz",
+            "descripcion":"Clases de jazz de 3 a 4"
         },
         {
-            "nombreColor":"magenta",
-            "valorHexadec":"#f0f"
+            "nombre":"Yoga",
+            "descripcion":"Relajate con nosotros en el parque"
         },
         {
-            "nombreColor":"amarillo",
-            "valorHexadec":"#ff0"
-        },
-        {
-            "nombreColor":"negro",
-            "valorHexadec":"#000"
+            "nombre":"salsa",
+            "descripcion":"Baile y felicidad"
         }
     ]
 }
