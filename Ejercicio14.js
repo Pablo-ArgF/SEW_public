@@ -215,7 +215,7 @@ class GestorGrupos {
             //representamos el grupo con una seccion
             var str = "<section ondrop= 'gestor.drop(event)' ondragover='gestor.allowDrop(event)'>";
             str += "<h3>" + grupo.nombre + "</h3>";
-            str += "<label for='descrgrupo-" + grupo.nombre + "'>Descripcion: </label><textarea readonly id='descrgrupo-" + grupo.nombre + "'>" + grupo.descripcion + "</textarea>";
+            str += "<label for='descrgrupo" + grupo.nombre + "'>Descripcion: </label><textarea readonly id='descrgrupo" + grupo.nombre + "'>" + grupo.descripcion + "</textarea>";
             str += "<input type='button' value='Borrar grupo' onclick='gestor.borrarGrupo(\"" + grupo.nombre.toString() + "\")'>";
             //vamos a generar una string con los participartes en este curso
             var integrantes = "";
