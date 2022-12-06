@@ -1,0 +1,98 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Contiene todo lo relativo a la estética del documento HTML 
+    junto con el layout de las secciones que permite ser colocado correctamente
+
+******************/
+
+
+/*------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE ELEMENTOS GENERALES---------------*/
+/*------------------------------------------------------------------*/
+
+/*Aplicamos a body el estilo*/
+body /*especifidad =  1*/
+{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 1em 1.5em ; /*margen de 1em hacia arriba y abajo y de 1.5em para los lados*/
+}
+
+h1, footer /*especifidad =  2*/
+{
+    color: white;
+    background-color: black;   
+    border-radius: 1em;
+    
+    text-align: center;
+}
+
+/*hacemos que el margen del footer crezca para que se vea separado*/
+footer{ /*especificidad = 001*/
+    margin-top: 1em;
+}
+
+
+section /*especifidad =  1*/
+{
+    /*hereda de body el color de letra negro*/
+    background-color: rgb(209, 209, 209);
+    
+    border-radius: 0.2em;
+    margin: 2em;
+}
+
+
+/*--------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE LOS ELEMENTOS h---------------*/
+/*--------------------------------------------------------------*/
+
+h1{ /*especificidad = 001*/
+    /*hereda la mayoría de sus atributos del selector de arriba*/
+    padding: 1em;
+}
+
+h2 /*especifidad =  1*/
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #1b1b1b;
+
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+
+/*--------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DEL SEGUNDO PARRAFO---------------*/
+/*--------------------------------------------------------------*/
+
+textarea{
+    resize: none;
+    width: 98%;
+    height: 60%;
+}
+section section{
+    height: 20em;
+}
+
+
+
+
+
+
+
+
+
+
+
