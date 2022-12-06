@@ -1,0 +1,15 @@
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<Placemark>
+<name>Llanes, lugar de nacimiento de: Pablo Argallero Fernández</name>
+<description>Lugar de nacimiento de Pablo Argallero Fernández</description>
+<Point>
+<coordinates>
+43.4198200, -4.7548500
+</coordinates>
+</Point>
+</Placemark>
+
+            <altitudeMode>relativeToGround</altitudeMode>
+            </Document>
+            </kml>
+            

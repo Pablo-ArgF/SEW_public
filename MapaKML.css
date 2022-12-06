@@ -1,0 +1,81 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Contiene todo lo relativo a la estética de los elementos HTML
+    las principales secciones de esta hoja de estilo son:
+        -CONFIGURACIÓN DE ELEMENTOS GENERALES - body ,footer,header,section,...
+        -CONFIGURACIÓN DE LOS ELEMENTOS h - h1,h2, ...
+        -CONFIGURACION DEL ARTICLE QUE VA A CONTENER AL MAPA
+
+******************/
+
+
+/*------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE ELEMENTOS GENERALES---------------*/
+/*------------------------------------------------------------------*/
+
+/*Aplicamos a body el estilo*/
+body /*especifidad =  1*/
+{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 1em 1.5em ; /*margen de 1em hacia arriba y abajo y de 1.5em para los lados*/
+}
+
+h1, footer /*especifidad =  2*/
+{
+    color: white;
+    background-color: #000000;   
+    border-radius: 1em;
+    padding:  1em;
+    text-align: center;
+}
+
+/*hacemos que el margen del footer crezca para que se vea separado*/
+footer{ /*especificidad = 001*/
+    margin-top: 1em;
+}
+
+
+section /*especifidad =  1*/
+{
+    /*hereda de body el color de letra negro*/
+    background-color: rgb(193, 193, 193);
+    
+    border-radius: 0.2em;
+}
+
+p{ /*especificidad = 1*/
+    /* hereda el color de la letra y fuente de body */
+
+    /*añadimos el padding para separar los parrafos de los laterales de
+    siendo la primera la distancia top&bottom y la segunda la distancia hacia los lados*/
+    padding: 0.2em 1em;
+}
+
+h2 /*especifidad =  1*/
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: white;
+
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+
+
+/*Configuramos el articulo para que contenga al mapa añadientdole un tamaño de alto fijo*/
+article{
+    height: 15em;
+}
+
+
+
+
+
+
+
+
+

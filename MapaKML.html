@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+   <!-- Datos que describen el documento -->
+   <meta charset="UTF-8" />
+   <title>Ejercicio13- google maps y archivo KML</title>
+   <link rel="stylesheet" type="text/css" href="MapaKML.css" />
+   <meta name="author" content="Pablo Argallero Fernández" />
+
+   <meta name="description"
+      content="Uso de la API de Google maps para marcar posiciones de un archivo kml" />
+   <meta name="keywords" content="Geolocalizacion,GoogleMaps,kml" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="MapaKML.js"></script>
+   <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaoWI1RlZhtFXMThX0acROZGigNsFrJL8&callback=representadorKML.initMap"></script>
+   
+
+</head>
+
+<body>
+   <h1>Ejercicio 13 - Mapa con puntos en archivo KML</h1>
+   <main>
+      <section>
+         <h2>Mapa del KML</h2>
+         <p>Primero de todo seleccione el archivo kml que desea procesar.</p>
+         <label for="inputFiles">Seleccione el archivo<input id="inputFiles" type="file" accept=".kml" onchange="representadorKML.leerArchivoKML(this.files[0])"></label>
+      </section>
+
+   </main>
+   <footer>
+      <img src="multimedia/HTML5.png" alt="HTML válido" />
+      <img src="multimedia/CSS3.png" alt="CSS válido" />
+   </footer>
+</body>
+
+</html>

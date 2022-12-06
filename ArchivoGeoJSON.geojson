@@ -1,0 +1,33 @@
+{
+"type": "FeatureCollection",
+"name": "ArchivoKML",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Llanes, lugar de nacimiento de: Pablo Argallero Fernández", "description": "Lugar de nacimiento de Pablo Argallero Fernández" }, "geometry": { "type": "Point", "coordinates": [ 43.41982, -4.75485 ] } },
+{ "type": "Feature", "properties": { "Name": "Blimea, lugar de residencia de: Pablo Argallero Fernández", "description": "Lugar de Residencia de Pablo Argallero Fernández" }, "geometry": { "type": "Point", "coordinates": [ 43.272763, -5.589045 ] } },
+{ "type": "Feature", "properties": { "Name": "Barredos, lugar de nacimiento de: Juncal Gallo Gonzales", "description": "Lugar de nacimiento de Juncal Gallo Gonzales" }, "geometry": { "type": "Point", "coordinates": [ 43.36029, -5.84476 ] } },
+{ "type": "Feature", "properties": { "Name": "New York, lugar de residencia de: Juncal Gallo Gonzales", "description": "Lugar de Residencia de Juncal Gallo Gonzales" }, "geometry": { "type": "Point", "coordinates": [ 40.73061, -73.935242 ] } },
+{ "type": "Feature", "properties": { "Name": "Aviles, lugar de nacimiento de: Pepe Ramon del Rey", "description": "Lugar de nacimiento de Pepe Ramon del Rey" }, "geometry": { "type": "Point", "coordinates": [ 43.55473, -5.92483 ] } },
+{ "type": "Feature", "properties": { "Name": "Oviedo, lugar de residencia de: Pepe Ramon del Rey", "description": "Lugar de Residencia de Pepe Ramon del Rey" }, "geometry": { "type": "Point", "coordinates": [ 43.360295, -5.844762 ] } },
+{ "type": "Feature", "properties": { "Name": "Mieres, lugar de nacimiento de: Juan Fernández del Rey", "description": "Lugar de nacimiento de Juan Fernández del Rey" }, "geometry": { "type": "Point", "coordinates": [ 43.25, -5.76667 ] } },
+{ "type": "Feature", "properties": { "Name": "Colombia, lugar de residencia de: Juan Fernández del Rey", "description": "Lugar de Residencia de Juan Fernández del Rey" }, "geometry": { "type": "Point", "coordinates": [ 4.1156735, -72.9301367 ] } },
+{ "type": "Feature", "properties": { "Name": "Sotrondio, lugar de nacimiento de: Cintia Fernandez Suarez", "description": "Lugar de nacimiento de Cintia Fernandez Suarez" }, "geometry": { "type": "Point", "coordinates": [ 43.275087, -5.60476 ] } },
+{ "type": "Feature", "properties": { "Name": "Gijón, lugar de residencia de: Cintia Fernandez Suarez", "description": "Lugar de Residencia de Cintia Fernandez Suarez" }, "geometry": { "type": "Point", "coordinates": [ 43.53573, -5.66152 ] } },
+{ "type": "Feature", "properties": { "Name": "Washingtong DC, lugar de nacimiento de: Rosana Gallo Gonzales", "description": "Lugar de nacimiento de Rosana Gallo Gonzales" }, "geometry": { "type": "Point", "coordinates": [ 38.89511, -77.03637 ] } },
+{ "type": "Feature", "properties": { "Name": "Las maldivas, lugar de residencia de: Rosana Gallo Gonzales", "description": "Lugar de Residencia de Rosana Gallo Gonzales" }, "geometry": { "type": "Point", "coordinates": [ 1.924992, 73.399658 ] } },
+{ "type": "Feature", "properties": { "Name": "El congo, lugar de nacimiento de: Ivan Ramon del Rey", "description": "Lugar de nacimiento de Ivan Ramon del Rey" }, "geometry": { "type": "Point", "coordinates": [ -0.6605788, 14.8965794 ] } },
+{ "type": "Feature", "properties": { "Name": "Dubai, lugar de residencia de: Ivan Ramon del Rey", "description": "Lugar de Residencia de Ivan Ramon del Rey" }, "geometry": { "type": "Point", "coordinates": [ 25.276987, 55.296249 ] } },
+{ "type": "Feature", "properties": { "Name": "Caravia, lugar de nacimiento de: David Fernández del Monte", "description": "Lugar de nacimiento de David Fernández del Monte" }, "geometry": { "type": "Point", "coordinates": [ 43.4667, -5.1833 ] } },
+{ "type": "Feature", "properties": { "Name": "Sudafrica, lugar de residencia de: David Fernández del Monte", "description": "Lugar de Residencia de David Fernández del Monte" }, "geometry": { "type": "Point", "coordinates": [ -28.4792625, 24.6727135 ] } },
+{ "type": "Feature", "properties": { "Name": "Berlin, lugar de nacimiento de: Julio Fernandez Suarez", "description": "Lugar de nacimiento de Julio Fernandez Suarez" }, "geometry": { "type": "Point", "coordinates": [ 52.520008, 13.404954 ] } },
+{ "type": "Feature", "properties": { "Name": "Andorra, lugar de residencia de: Julio Fernandez Suarez", "description": "Lugar de Residencia de Julio Fernandez Suarez" }, "geometry": { "type": "Point", "coordinates": [ 42.5, 1.6 ] } },
+{ "type": "Feature", "properties": { "Name": "Sama, lugar de nacimiento de: Juanito Del Sur Gonzales", "description": "Lugar de nacimiento de Juanito Del Sur Gonzales" }, "geometry": { "type": "Point", "coordinates": [ 43.316123, -5.68223 ] } },
+{ "type": "Feature", "properties": { "Name": "La felguera, lugar de residencia de: Juanito Del Sur Gonzales", "description": "Lugar de Residencia de Juanito Del Sur Gonzales" }, "geometry": { "type": "Point", "coordinates": [ 43.306165442, -5.688497246 ] } },
+{ "type": "Feature", "properties": { "Name": "Calpe, lugar de nacimiento de: Ricardo Ramon del Rey", "description": "Lugar de nacimiento de Ricardo Ramon del Rey" }, "geometry": { "type": "Point", "coordinates": [ 38.6447, 0.0445 ] } },
+{ "type": "Feature", "properties": { "Name": "Oviedo, lugar de residencia de: Ricardo Ramon del Rey", "description": "Lugar de Residencia de Ricardo Ramon del Rey" }, "geometry": { "type": "Point", "coordinates": [ 43.36029, -5.84476 ] } },
+{ "type": "Feature", "properties": { "Name": "Valencia de don Juan, lugar de nacimiento de: Carlos Fernández del Norte", "description": "Lugar de nacimiento de Carlos Fernández del Norte" }, "geometry": { "type": "Point", "coordinates": [ 42.29253, -5.51912 ] } },
+{ "type": "Feature", "properties": { "Name": "Osaka, lugar de residencia de: Carlos Fernández del Norte", "description": "Lugar de Residencia de Carlos Fernández del Norte" }, "geometry": { "type": "Point", "coordinates": [ 34.672314, 135.484802 ] } },
+{ "type": "Feature", "properties": { "Name": "Tokio, lugar de nacimiento de: Lucía Fernandez Suarez", "description": "Lugar de nacimiento de Lucía Fernandez Suarez" }, "geometry": { "type": "Point", "coordinates": [ 35.652832, 139.839478 ] } },
+{ "type": "Feature", "properties": { "Name": "Buenos Aires, lugar de residencia de: Lucía Fernandez Suarez", "description": "Lugar de Residencia de Lucía Fernandez Suarez" }, "geometry": { "type": "Point", "coordinates": [ -34.603722, -58.381592 ] } }
+]
+}
