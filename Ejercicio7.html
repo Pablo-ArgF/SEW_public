@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+   <!-- Datos que describen el documento -->
+   <meta charset="UTF-8" />
+   <title>Ejercicio7 - introduccion a JQuery</title>
+   <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+   <meta name="author" content="Pablo Argallero Fernández" />
+
+   <meta name="description"
+      content="Introduccion a JQuery, modificacion y eliminacion de elementos html usando JQuery." />
+
+   <meta name="keywords" content="JQuery" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="Ejercicio7.js"></script>
+</head>
+
+<body>
+   <h1>Ejercicio7 - Iniciación a JQuery</h1>
+   <main>
+      <article>
+         <h2>Panel de control</h2>
+         <p>Botonera para el control de los eventos sobre el HTML:</p>
+         <input type="button" value="Ocultar imágenes" onclick="ejercicio.ocultarImagenes()">
+         <input type="button" value="Mostrar imágenes" onclick="ejercicio.mostrarImagenes()">
+         <input type="button" value="Primer párrafo a mayúscula" onclick="ejercicio.primerTituloAMayusculas()">
+         <input type="button" value="Añadir nuevo elemento a lista" onclick="ejercicio.añadirElementoALista()">
+         <input type="button" value="Eliminar ultimo elemento a lista" onclick="ejercicio.eliminarUltimoElementoDeLista()">
+         <input type="button" value="Imprimir arbol DOM" onclick="ejercicio.imprimirArbolDOM()">
+         <input type="button" value="Sumar datos table" onclick="ejercicio.sumarTabla()">
+   
+      </article>
+      <section>
+         <h2>Pruebas con tablas</h2>
+         <p>A continuación se usa una pequeña tabla con la lista de la compra,esta será usada para computar el total de
+            filas, columnas y el total.</p>
+         <table>
+            <caption>Lista de la compra</caption>
+            <thead>
+               <tr>
+                  <th scope="col" id="items">Items</th>
+                  <th scope="col" id="precio">Precio</th>
+                  <th scope="col" id="cantidad">Cantidad</th>
+                  <th scope="col" id="TOTALC">TOTAL</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th scope="row" id="tomates" headers="items">Tomates</th>
+                  <td headers="precio">0.80</td>
+                  <td headers="cantidad">5</td>
+                  <td headers="TOTALC"></td>
+               </tr>
+               <tr>
+                  <th scope="row" id="cebolla" headers="items">Cebolla</th>
+                  <td headers="precio">1.2</td>
+                  <td headers="cantidad">6</td>
+                  <td headers="TOTALC"></td>
+               </tr>
+               <tr>
+                  <th scope="row" id="galletas" headers="items">Galletas</th>
+                  <td headers="precio">12</td>
+                  <td headers="cantidad">3</td>
+                  <td headers="TOTALC"></td>
+               </tr>
+               <tr>
+                  <th scope="row" id="ketchup" headers="items">Ketchup</th>
+                  <td headers="precio">5</td>
+                  <td headers="cantidad">2</td>
+                  <td headers="TOTALC"></td>
+               </tr>
+               <tr>
+                  <th scope="row" id="aceite" headers="items">Aceite</th>
+                  <td headers="precio">15.33</td>
+                  <td headers="cantidad">1</td>
+                  <td headers="TOTALC"></td>
+               </tr>
+               <tr>
+                  <th scope="row" id="TOTALR" headers="items">TOTAL</th>
+                  <td headers="precio"></td>
+                  <td headers="cantidad"></td>
+                  <td headers="TOTALC"></td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+      <section>
+         <h2>Características de Ruby on Rails</h2>
+
+         <p>Ya que hablamos de las características del lenguaje Ruby, resumiremos también las características de ese
+            framework que tanto éxito tiene en el desarrollo web.</p>
+
+         <img src="multimedia/Ruby-on-Rails.png" alt="Logo Ruby on Rails" />
+
+         <ul>
+            <li>
+               Paradigma imperativo
+            </li>
+
+            <li>
+               Paradigma declarativo funcional
+            </li>
+
+            <li>
+               Paradigma orientado a objetos
+            </li>
+         </ul>
+
+         <h3>Más información</h3>
+         <p>Es un proyecto de código abierto por lo que no requiere de licencias.Es también independiente de la aspecto
+            de
+            datos y de registro activo (que quiere decir que los objetos que se creas son guardados en la base de
+            datos).Nos ahorra tiempo al "no tener que" implementar código de configuración, ya que este lo genera
+            automaticamente si se siguen las convenciones de nomenclatura. Automatizacion de una serie de tests
+            sencillos
+            pero útiles.</p>
+
+      </section>
+
+      <section>
+         <h2>Estructura del arbol DOM</h2>
+         <p>A continuacion si se presiona el boton aparecera la estructura del arbol dom de este documento</p>
+
+         <label for="estructuraArbolDom">Estructura del arbol DOM
+            <textarea readonly id="estructuraArbolDom">
+         </textarea>
+         </label>
+
+      </section>
+
+      
+   </main>
+   <footer>
+      <img src="multimedia/HTML5.png" alt="HTML válido" />
+      <img src="multimedia/CSS3.png" alt="CSS válido" />
+   </footer>
+</body>
+
+</html>
