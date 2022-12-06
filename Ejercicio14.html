@@ -61,7 +61,7 @@
          <section>
             <h3>Inserción de datos por archivo</h3>
             <p>Seleccione un archivo json que contenga el formato correcto (usar el ejemplo en la carpeta como referencia).</p>
-            <label for="cargaArchivos">Seleccione el archivo con datos a cargar</label><input itemref="cargaArchivos" type="file" accept=".json" onchange="gestor.cargarDeArchivo(this.files[0])">
+            <label for="cargaArchivos">Seleccione el archivo con datos a cargar</label><input id="cargaArchivos" type="file" accept=".json" onchange="gestor.cargarDeArchivo(this.files[0])">
          </section>
       </section>
       <section>
