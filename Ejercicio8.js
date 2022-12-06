@@ -15,6 +15,8 @@ class Meteorologia {
 
     //carga los jsons y los envia para ser formateados
     cargarDatos(){
+        //borramos las secciones del main que pudiera haber anteriormente
+        $("main section").remove();
         //lanzamos una peticion por cada una de las ciudades
         var i;
         for(i = 0 ; i < this.ciudades.length ; i++){

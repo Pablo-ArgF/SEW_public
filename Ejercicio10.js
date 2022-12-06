@@ -17,6 +17,8 @@ class PrecioDeLaLuz {
 
     //carga el json con la informacion dandole la query que va a hacer al servicio
     cargarDatos() {
+        //borramos las secciones del main que pudiera haber anteriormente
+        $("main section").remove();
         //actualizamos los datos de fechas dependiendo de la hora actual
         this.inicio = new Date().setDate(new Date().getDate() - 1); //un día hacia atras
         this.inicio = new Date(this.inicio).setMinutes(0); //lo ponemos al inicio de la hora
