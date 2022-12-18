@@ -1,0 +1,158 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Descipción de los estilos que contiene
+******************/
+
+input[type="submit"]{
+
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-size: 1.2em;
+    border: none;
+    padding: 0.6em;
+}
+ 
+/*pintamos los botones de los numeros de un color mas claro*/
+input[type="submit"][value="0"],
+input[type="submit"][value="1"],
+input[type="submit"][value="2"],
+input[type="submit"][value="3"],
+input[type="submit"][value="4"],
+input[type="submit"][value="5"],
+input[type="submit"][value="6"],
+input[type="submit"][value="7"],
+input[type="submit"][value="8"],
+input[type="submit"][value="9"],
+input[type="submit"][value="."]
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+input[type="submit"][value="Enter"]{
+    background-color: rgb(214, 159, 159);
+}
+
+input[type="submit"][value="▼"]
+{
+    background-color: rgb(151, 161, 213);
+}
+
+
+section{
+    margin: 1.5em;
+    padding: 1em;
+    background-color: rgb(237, 237, 237);
+    color: black;
+}
+
+footer{
+    padding: 1em;
+}
+
+
+input[type="text"]{
+    border: 0em;
+   color: black;
+   font-size: 1.2em;
+   font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+h1{
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border-radius: 0.2em;
+    font-size: 2em;
+}
+
+header{
+    background-color: rgb(237, 237, 237);
+    margin: 1em 9em;
+}
+header p{
+    margin: 1em;
+}
+
+p, figcaption{
+    font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/********************************
+LAYOUT
+*********************************/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+form
+{
+
+   display: grid;
+   grid-template-columns: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta]1fr [ultima];
+   grid-template-rows: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta] 1fr
+                        [sexta]1fr
+                        [septima] 1fr 
+                        [octaba] 1fr
+                        [novena]1fr
+                        [decima]1fr 
+                        [undecima]1fr [ultima];;
+   grid-gap: 0.5em;
+   
+}
+
+
+textarea{
+    display: block;
+    width: 100%;
+    height: 80%;
+}
+
+label:nth-of-type(1) {
+    grid-row: primera /cuarta;
+    grid-column: primera / ultima;
+}
+label textarea{
+    resize: none;
+}
+
+/*configuramos tamaño del input*/
+label:nth-of-type(2){
+    grid-column: primera / ultima;
+    grid-row: cuarta;
+}
+input[type="submit"][value="Enter"]{
+    grid-column: cuarta / ultima;
+}
+
+section
+{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+

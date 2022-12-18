@@ -1,0 +1,111 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Descipción de los estilos que contiene
+******************/
+
+h2{
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    
+}
+
+input[type="submit"]{
+    border-radius: 0.3em;
+    background-color: rgb(106, 106, 106);
+    color: white;
+    font-size: 1.5em;
+}
+ 
+/*pintamos los botones de los numeros de un color mas claro*/
+input[type="submit"][value="0"],
+input[type="submit"][value="1"],
+input[type="submit"][value="2"],
+input[type="submit"][value="3"],
+input[type="submit"][value="4"],
+input[type="submit"][value="5"],
+input[type="submit"][value="6"],
+input[type="submit"][value="7"],
+input[type="submit"][value="8"],
+input[type="submit"][value="9"],
+input[type="submit"][value="."]
+{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+input[type="submit"][value="="]
+{
+    background-color: rgb(143, 0, 0);
+    color: white;
+}
+
+section{
+    padding: 1em;
+    background-color: rgb(159, 159, 159);
+    color: black;
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: black;
+}
+
+footer{
+    padding: 1em;
+}
+
+
+input[type="text"]{
+    background-color: rgb(190, 244, 190);
+   color: black;
+   font-size: 1.2em;
+   font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+
+/********************************
+LAYOUT
+*********************************/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+form 
+{
+   display: grid;
+   grid-template-columns: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta]1fr [ultima];
+   grid-template-rows: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta] 1fr
+                        [sexta]1fr [ultima];
+   grid-gap: 0.5em;
+   
+}
+
+/*configuramos tamaño del input*/
+label {
+    grid-column: primera / ultima;
+}
+input[type="text"]{
+    display: block;
+    width: 100%;
+}
+
+/*Configuramos el tamaño del boton +*/
+input[value="+"]{
+    grid-row: quinta /  ultima;
+    grid-column: cuarta/quinta;
+}
+
+

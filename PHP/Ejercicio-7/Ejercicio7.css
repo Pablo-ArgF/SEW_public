@@ -1,0 +1,303 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Contiene todo lo relativo a la estética de los elementos HTML
+    las principales secciones de esta hoja de estilo son:
+        -CONFIGURACION DE COLORES DE TODOS LOS ELEMENTOS
+        -LAYOUTS DE TODOS LOS ELEMENTOS
+
+******************/
+
+
+/*------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE ELEMENTOS GENERALES---------------*/
+/*------------------------------------------------------------------*/
+
+/*Aplicamos a body el estilo*/
+body
+
+/*especifidad =  1*/
+    {
+    color: black;
+    background-color: rgb(102, 105, 115);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 1em 1.5em;
+    /*margen de 1em hacia arriba y abajo y de 1.5em para los lados*/
+}
+
+h1,
+footer
+
+/*especifidad =  2*/
+    {
+    color: white;
+    background-color: #000000;
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+h2
+
+/*especifidad =  1*/
+    {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: white;
+
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+
+main>section:nth-of-type(2)>h2 {
+    background-color: #39AC60;
+    color: black;
+}
+
+h3 {
+    background-color: rgb(181, 181, 181);
+    color: black;
+    text-align: center;
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
+h4 {
+    border-radius: 1em;
+    padding: 0.2em;
+}
+
+/*hacemos que el margen del footer crezca para que se vea separado*/
+footer {
+    /*especificidad = 001*/
+    margin-top: 1em;
+}
+
+
+section
+/*especifidad =  1*/
+    {
+    /*hereda de body el color de letra negro*/
+    background-color: rgb(219, 219, 219);
+
+    border-radius: 0.2em;
+    padding: 0.5em;
+    margin: 1em 0.5em;
+}
+
+section>section {
+    background-color: white;
+    border-style: ridge;
+    border-color: black;
+    border-width: 0.1em;
+}
+
+p {
+    padding: 0.2em;
+}
+
+/*****************************************************************************************************************************
+CONFIGURACION DE COLORES DE LAS SECCIONES
+******************************************************************************************************************************/
+/*----------------------------SECCION DE COLORES DE FILTROS-------------------------------*/
+
+/*@@@@@@@@@@@@@@@@@@FILTRO CATEGORIAS*/
+main>section:nth-of-type(3)>h3:first-of-type {
+    background-color: #310052;
+    color: white;
+}
+
+main>section:nth-of-type(3)>form:nth-of-type(1) input[type="submit"] {/*filtro de categorias*/
+    background-color: #664082;
+    color: white;
+}
+
+main>section:nth-of-type(3)>form:nth-of-type(1) input[type="submit"]:hover {/*categorias hover*/
+    background-color: #BE8DC8;
+    color: black;
+}
+
+main>section:nth-of-type(3)>h4 {
+    background-color: #630c0c;
+    color: white;
+}
+
+/*@@@@@@@@@@@@@@@@@@FILTRO LENGUAJES*/
+main>section:nth-of-type(3)>h3:last-of-type {
+    background-color: #704D00;
+    color: white;
+}
+
+main>section:nth-of-type(3)>form:nth-of-type(2) input[type="submit"] {/*filtro de categorias*/
+    background-color: #D1852E;
+    color: black;
+}
+
+main>section:nth-of-type(3)>form:nth-of-type(2) input[type="submit"]:hover {/*categorias hover*/
+    background-color: #FFC17A;
+    color: black;
+}
+
+main>section:nth-of-type(3)>form>input[type="submit"]:first-of-type { /*boton de desactivacion de filtros*/
+    background-color: #6D1717; 
+    color: white;
+}
+main>section:nth-of-type(3)>form> input[type="submit"]:nth-of-type(1):hover { /*boton de desactivacion de filtros hover*/
+    background-color: #9E2E2E;
+    color: white;
+}
+
+
+
+/*----------------------------SECCION DE PREGUNTAS-------------------------------*/
+main>section:nth-of-type(5)>section h3{ /*titulos de las preguntas*/
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+main>section:nth-of-type(5)>section h4{ /*indicador de inicio de las respuestas*/
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: center;
+}
+
+/*@@@@@@@@@@@@@@@@@@HAZ TU PROPIA PREGUNTA*/
+main>section:nth-of-type(4) h3{
+    background-color:#283149;
+    color: #DBEDF3;
+}
+
+/********************************
+CONFIGURACION DEL FORMULARIO
+*********************************/
+/* layout del formulario */
+main>section:nth-of-type(1),
+main>section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: [primera]1fr[segunda]1fr;
+    grid-template-rows: 0.1fr 1fr;
+}
+
+main>section:nth-of-type(1)>h2,
+main>section:nth-of-type(2)>h2 {
+    grid-column: primera / ultima;
+}
+
+main>section:nth-of-type(1)>form>input,
+main>section:nth-of-type(2)>form>input {
+    grid-column: segunda;
+}
+
+
+
+/*----------------------------FORMULARIOS-------------------------------*/
+form {
+    padding: 1em;
+    background-color: #f5f5f5;
+    border-radius: 0.2em;
+    margin: 0.5em;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: 0.1em solid #ccc;
+    border-radius: 0.2em;
+}
+
+input[type="submit"] {
+    padding: 0.5em 3em;
+    border-radius: 1em;
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+textarea{
+    resize: none;
+    border-radius: 0.2em;
+    width: 100%;
+    height: 95%;
+}
+
+/*************
+CONFIGURACION DE LAS SECCIONES DE BASE DE DATOS Y USUARIOS
+********/
+
+input[type="submit"] {
+    background-color: #61e165;
+    color: black;
+}
+
+input[type="submit"]:hover {
+    background-color: #56c75b;
+}
+
+/*************
+CONFIGURACION DE LAS PREGUNTAS INDIVIDUALES
+**************/
+
+main>section:nth-of-type(5)>section>p:nth-of-type(1){ /*lenguaje*/
+    background-color: #D1852E;
+}
+main>section:nth-of-type(5)>section>p:nth-of-type(2){ /*categoria*/
+    background-color: #664082;
+    color: white;
+}
+pre{ /*codigo pregunta*/
+    background-color: rgb(205, 205, 205);
+    border-color: black;
+    border-radius: 0.5em;
+    border-width: 0.2em;
+    border-style: groove;
+    padding: 0.3em;
+}
+/*@@@@@@@@@@@ RESPUESTAS*/
+main>section:nth-of-type(5)>section>section>h3{
+    background-color:#3d7877;
+    color: white;
+}
+/*@@@@@@@@@@@ DEJA TU RESPUESTA*/
+main>section:nth-of-type(5)>section>section:last-of-type>h3{
+    background-color:#283149;
+    color: white;
+}
+
+
+/*****************************************************************************************************************************
+CONFIGURACION DE LAYOUTS PARA LAS SECCIONES
+******************************************************************************************************************************/
+
+/*************
+CONFIGURACION DE LAS SECCIONES DE FILTROS
+**************/
+main>section:nth-of-type(3)>form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*************
+CONFIGURACION DE LA SECCION CON LAS PREGUNTAS
+**************/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@HAZ TU PROPIA PREGUNTA*/
+main>section:nth-of-type(4)>form { /*haz tu propia pregunta*/
+    display: grid;
+    grid-template-areas: 
+        "p1 field"
+        "p2 field"
+        "code code";
+    column-gap: 0.5em;
+}
+main>section:nth-of-type(4)>form>p:nth-of-type(1) { /*titulo de la pregunta*/
+    grid-area: p1;
+}
+main>section:nth-of-type(4)>form>p:nth-of-type(2) { /*descripcion de la pregunta*/
+    grid-area: p2;
+}
+main>section:nth-of-type(4)>form>fieldset { /*clasificación*/
+    grid-area: field;
+}
+main>section:nth-of-type(4)>form>p:nth-of-type(3) { /*codigo de la pregunta*/
+    grid-area: code;
+}
+
+

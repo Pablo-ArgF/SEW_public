@@ -1,0 +1,26 @@
+
+--------------------------------------------------------------EJERCICIOS CALCULADORAS 1,2,3
+en las calculadoras no puede haber ningun codigo javascript.
+Quitamos el script y lo sustituimos por:
+    <?php 
+        sessin.start() -> inicializa la sesion si no hay ninguna
+        clase Calculadora{...}
+        manejo de sesion
+        manejo de pulsaciones con teclado>
+
+    <form action ="#" method="POST" > 
+        <label>
+            <input type = text value (?php echo ...)> -> cada vez que se carga coje y pone el valor de la variable
+            <input button name = "xxxxxx" value =... type =submit> -> el name para identificarlo en el php -> el submit para que mande una señal al servidor cada pulsaciones
+                el post que le llega a php es $_POST["xxxxxx"]
+
+    en php actualizamos las variables -> no tenemos que actualizar la pantalla como antes -> la pantalla se actualiza en el form
+
+    al final del switch de los posts $_POST["..."] tengo que guardar el estado en el finally del switch
+
+para debugear usamos print_r(variable) o var_dump($calculadora)
+
+-------------------------------------------------------------EJERCICIO 4
+Consumir servicios web -> para hacerlo en php usamos $obj = file_get_contents($url)
+para pasarlo a json uar json_decode($obj)
+para serializarlos usar unserialize($obj)

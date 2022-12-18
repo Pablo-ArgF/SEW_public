@@ -1,0 +1,137 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Descipción de los estilos que contiene
+******************/
+
+input[type="submit"]{
+
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-size: 1.2em;
+    border: none;
+    padding: 0.6em;
+}
+ 
+/*pintamos los botones de los numeros de un color mas claro*/
+input[type="submit"][value="0"],
+input[type="submit"][value="1"],
+input[type="submit"][value="2"],
+input[type="submit"][value="3"],
+input[type="submit"][value="4"],
+input[type="submit"][value="5"],
+input[type="submit"][value="6"],
+input[type="submit"][value="7"],
+input[type="submit"][value="8"],
+input[type="submit"][value="9"],
+input[type="submit"][value="."]
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+input[type="submit"][value="MC"],
+input[type="submit"][value="MR"],
+input[type="submit"][value="MS"],
+input[type="submit"][value="M+"],
+input[type="submit"][value="M-"]
+{
+    background-color: inherit;
+    color: black;
+}
+
+input[type="submit"][value="deg"],
+input[type="submit"][value="rad"],
+input[type="submit"][value="hyp"],
+input[type="submit"][value="F-E"]
+{
+    background-color: inherit;
+    color: black;
+    font-size: 0.9em;
+}
+
+input[type="submit"][value="▼"]
+{
+    background-color: rgb(151, 161, 213);
+}
+
+
+section{
+    padding: 1em;
+    background-color: rgb(237, 237, 237);
+}
+
+footer{
+    padding: 1em;
+}
+
+
+input[type="text"]{
+    background-color: inherit;
+    border: 0em;
+   color: black;
+   font-size: 2em;
+}
+
+input[type="text"]:first-of-type{
+    /*override al tamaño de fuente para hacerlo mas pequeño*/
+   font-size: 1.2em;
+   border-bottom: 0.1em solid grey;
+   
+}
+
+
+/********************************
+LAYOUT
+*********************************/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+section 
+{
+   display: grid;
+   grid-template-columns: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta]1fr [ultima];
+   grid-template-rows: [primera] 1fr
+                        [segunda] 1fr
+                        [tercera] 1fr
+                        [cuarta] 1fr
+                        [quinta] 1fr
+                        [sexta]1fr
+                        [septima] 1fr 
+                        [octaba] 1fr
+                        [novena]1fr
+                        [decima]1fr
+                        [undecima]1fr [ultima];
+   grid-gap: 0.5em;
+   
+}
+
+input[type="text"]{
+    display: block;
+    width: 100%;
+}
+
+/*configuramos tamaño del input*/
+label{
+    grid-column: primera / ultima;
+    align-self: center;
+}
+
+
+section input[type="submit"][value="deg"],
+section input[type="submit"][value="rad"]
+{
+    grid-column: tercera;
+}
+
+

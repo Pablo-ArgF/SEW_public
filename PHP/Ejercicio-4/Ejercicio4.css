@@ -1,0 +1,118 @@
+/*****************
+    Pablo Argallero - UO283216
+    
+    Contiene todo lo relativo a la estética de los elementos HTML
+    las principales secciones de esta hoja de estilo son:
+        -CONFIGURACIÓN DE ELEMENTOS GENERALES - body ,footer,header,section,...
+        -CONFIGURACIÓN DE LOS ELEMENTOS h - h1,h2, ...
+
+******************/
+
+
+/*------------------------------------------------------------------*/
+/*---------------CONFIGURACIÓN DE ELEMENTOS GENERALES---------------*/
+/*------------------------------------------------------------------*/
+
+/*Aplicamos a body el estilo*/
+body /*especifidad =  1*/
+{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 1em 1.5em ; /*margen de 1em hacia arriba y abajo y de 1.5em para los lados*/
+}
+
+h1, footer /*especifidad =  2*/
+{
+    color: white;
+    background-color: #000000;   
+    border-radius: 1em;
+    padding:  1em;
+    text-align: center;
+}
+
+h2 /*especifidad =  1*/
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: white;
+
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+
+h3{
+    background-color: rgb(181, 181, 181);
+    color: black;
+    text-align: center;
+    border-radius: 1em;
+    padding:  0.5em;
+}
+
+/*hacemos que el margen del footer crezca para que se vea separado*/
+footer{ /*especificidad = 001*/
+    margin-top: 1em;
+}
+
+
+section /*especifidad =  1*/
+{
+    /*hereda de body el color de letra negro*/
+    background-color: rgb(193, 193, 193);
+    
+    border-radius: 0.2em;
+}
+section>section{
+    background-color: white;
+    border-style: ridge;
+    border-color: black;
+    border-width: 0.1em;
+}
+
+p{ /*especificidad = 1*/
+    /* hereda el color de la letra y fuente de body */
+
+    /*añadimos el padding para separar los parrafos de los laterales de
+    siendo la primera la distancia top&bottom y la segunda la distancia hacia los lados*/
+    padding: 0.2em 1em;
+}
+
+
+
+
+/********************************
+LAYOUT DE LA SECCION PRINCIPAL
+*********************************/
+body>section{
+    display: grid;
+    grid-template-columns: [primera] repeat(4,1fr)[ultima];
+    grid-template-rows: auto;
+    gap: 1em 1em;
+}
+body>section>h2, body>section>p{
+    grid-column: primera/ultima;
+}
+body>section>p{
+    text-align: center;
+}
+
+
+/********************************
+LAYOUT PARA CADA SECCION DE UNA FECHA
+*********************************/
+section>section{
+    display: grid;
+    grid-template-columns: [primera]repeat(5,1fr)[ultima];
+    grid-template-rows: auto;
+}
+section>section>h3, section>section>p{
+    grid-column: primera/ultima;
+}
+
+
+
+
+
+
+
